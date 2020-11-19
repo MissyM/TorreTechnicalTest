@@ -1,7 +1,5 @@
 # TorreTechnicalTest
 
-### How run react code in development mode
-
 ### Redesign the Genome
 
 If I were hiring, what I need/want to see/know about the candidate?
@@ -13,7 +11,7 @@ If I were hiring, what I need/want to see/know about the candidate?
 
 ### Implement Reputation bar in Genome, according to design
 
-- [ ] Implement new design
-  - [ ] Reputation bar
-- [ ] API connections
-- [ ] Upload to firebase hosting
+- [x] Implement new design Reputation component
+- [x] Implement Firebase function
+- [x] Display results in the interface
+- [x] Upload to firebase hosting

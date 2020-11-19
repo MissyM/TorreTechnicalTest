@@ -70,12 +70,12 @@
   background-color: var(--color-stats-value);
   border-radius: 2px;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   text-transform: uppercase;
  }
  
  .reputation__signal-stats-btn:focus {
-  outline:0
+  outline: 0;
  }
 
 .reputation__signal-stats-icon-btn {
