@@ -1,5 +1,7 @@
 # TorreTechnicalTest
 
+The front-end of this app is in React.js
+
 ### Redesign the Genome
 
 If I were hiring, what I need/want to see/know about the candidate?

@@ -6,7 +6,6 @@ interface Person {
   weight: string,
 
 }
-
 function Reputation() {
   const [person, setPerson] = useState<Person | null>(null)
   const [associations, setAssociations] = useState<number | null>(null)
@@ -37,7 +36,10 @@ function Reputation() {
       setAssociations(response.associations)
     })
   }, [])
-
+  const goToSignals = () => {
+    let path = 'https://bio.torre.co/en/signals/onboarding?signaledId=milenacabrera&column=resume'
+    window.location.href = path
+  }
   return (
     person ? <div className="reputation">
       <div className="reputation__box">
@@ -67,7 +69,7 @@ function Reputation() {
       </div>
 
       <div>
-        <button className="reputation__signal-stats-btn">
+        <button className="reputation__signal-stats-btn" onClick={goToSignals}>
           <svg className="reputation__signal-stats-icon-btn" viewBox="0 0 24 25">
             <path d="M1.5,4V5.5C1.5,9.65 3.71,13.28 7,15.3V20H22V18C22,15.34 16.67,14 14,14C14,14 13.83,14 13.75,14C9,14 5,10 5,5.5V4M14,4A4,4 0 0,0 10,8A4,4 0 0,0 14,12A4,4 0 0,0 18,8A4,4 0 0,0 14,4Z">
             </path>
@@ -75,7 +77,6 @@ function Reputation() {
           <span className="reputation__signal-stats-text-btn">signal</span>
         </button>
       </div>
-      https://bio.torre.co/en/signals/onboarding?signaledId=milenacabrera&column=resume
       <div className="reputation__box--padding">
         <span className="reputation__signal-stats">
           <svg className="reputation__signal-stats--icon" viewBox="0 0 24 25">
