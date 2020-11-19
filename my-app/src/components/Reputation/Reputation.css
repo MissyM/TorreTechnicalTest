@@ -1,6 +1,8 @@
 .reputation {
   height: 100px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #27292D;
 }
 
@@ -8,6 +10,7 @@
   width: 120px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .reputation__signal-stats {
@@ -16,14 +19,14 @@
  }
  
 .reputation__signal-stats--icon {
- height: 26px;
- fill: #ffffff;
+  height: 26px;
+  fill: #ffffff;
 }
 
 .reputation__signal-stats-icon--inverted {
- height: 26px;
- transform: scaleX(-1);
- fill: #ffffff;
+  height: 26px;
+  transform: scaleX(-1);
+  fill: #ffffff;
 }
 
 .reputation__signal-stats--value {
@@ -49,10 +52,12 @@
  .reputation__signal-stats-btn:focus {
   outline:0
  }
+
 .reputation__signal-stats-icon-btn {
   height: 26px;
   fill:#3E4336;
 }
+
 .reputation__signal-stats-text-btn {
   color:#3E4336;
 }
