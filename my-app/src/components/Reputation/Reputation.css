@@ -1,9 +1,18 @@
+:root {
+  --primary:#EAEBEB;
+  --secondary: #131A0A;
+  --main-bg-color: #27292D;
+  --color-stats-value: #8bc34a;
+  --text-color: #ffffff;
+}
+
 .reputation {
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #27292D;
+  background-color: var(--main-bg-color);
+  padding-left: 20px;
 }
 
 .reputation__box {
@@ -11,42 +20,58 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 20px;
+}
+
+.reputation__box--padding {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+  padding-bottom: 15px;
 }
 
 .reputation__signal-stats {
   height: 26px;
   display: flex;
+  justify-content: center;
  }
  
 .reputation__signal-stats--icon {
   height: 26px;
-  fill: #ffffff;
+  fill: var(--primary);
 }
 
 .reputation__signal-stats-icon--inverted {
   height: 26px;
   transform: scaleX(-1);
-  fill: #ffffff;
+  fill: var(--primary);
 }
 
 .reputation__signal-stats--value {
   font-size: 24px;
-  color: #8bc34a;
+  color: var(--color-stats-value);
+  padding-left: 3px;
 }
 
 .reputation__signal--text {
   font-size: 12px;
   text-align: center; 
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .reputation__signal-stats-btn {
   display: flex;
-  height: 26px;
-  padding: 0;
+  min-height: 36px;
+  min-width: 120px;
   border: none;
   background: none;
-  background-color: #8bc34a;
+  background-color: var(--color-stats-value);
+  border-radius: 2px;
+  align-items: center;
+  justify-content:center;
+  text-transform: uppercase;
  }
  
  .reputation__signal-stats-btn:focus {
@@ -55,9 +80,12 @@
 
 .reputation__signal-stats-icon-btn {
   height: 26px;
-  fill:#3E4336;
+  fill: var(--secondary);
 }
 
 .reputation__signal-stats-text-btn {
-  color:#3E4336;
+  color:var(--secondary);
+  font-weight: 500;
+  display: flex;
+  padding-left: 3px;
 }
