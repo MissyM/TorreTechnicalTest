@@ -76,6 +76,7 @@
  
  .reputation__signal-stats-btn:focus {
   outline: 0;
+  cursor: pointer;
  }
 
 .reputation__signal-stats-icon-btn {
