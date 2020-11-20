@@ -1,6 +1,13 @@
 # TorreTechnicalTest
 
-The front-end of this app is in React.js
+The front-end of this app is built using React.js.
+
+The server is built using Firebase Functions with Express.js and Node. It consist of two functions that allow the front-end to access the Torre API, that otherwise is not accessible because of the CORS policy.
+
+The link to the front-end is: https://torretechnicaltest.web.app/.
+The link to the back-end is: https://us-central1-torretechnicaltest.cloudfunctions.net/bios/.
+
+What I did was two thigs: Reprioritize the Genome in Figma, and implemented the Reputation bar so the redundant signaler icon is removed.
 
 ### Redesign the Genome
 
